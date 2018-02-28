@@ -1,0 +1,124 @@
+@import 'partials/var', 'partials/mixins', 'partials/headings',  'partials/select';
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: $color-bg;
+  color:$font-color;
+  font-family: $font;
+  font-size: .9em;
+}
+.copy{
+  font-size:.8em;
+  color:darken($grey,10%);
+}
+
+.btn {
+  margin-right: 5px;
+  button{
+    width:100%;
+    margin-top:10px;
+    padding:15px;
+    border:1px solid $color-primary;
+    border-radius: 5px;
+    background: white;
+    font-size: .8em;
+    font-weight: 700;
+    color:$color-primary;
+    text-decoration: none;
+    @media #{$mobile-l}{
+      padding: 5px 10px;
+    }
+    &:hover{
+      @include bg-grad($grad);
+      color: white;
+    }
+    .fa {
+      font-size: 1.2em;
+      padding-right: 5px;
+      padding-left: 10px;
+    }
+  }
+}
+/******** BOX ************/
+.box{
+  width:100vw;
+  height:100vh;
+  margin:0 auto;
+  background-color: white;
+  @include shadow;
+  @media #{$tablet}{
+    width:90vw;
+    height:90vh;
+    margin: 5% auto;
+  }
+  @media #{$lgdesktop}{
+    width:80vw;
+    height:90vh;
+  }
+}
+
+
+
+input{
+  display: none;
+  &:checked + label{
+    color:$color-primary;
+    @include grad($grad);
+    font-weight: 700;
+    border-bottom: 3px solid $color-primary;
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      background: white;
+      color:$color-primary;
+    }
+  }
+}
+
+.content{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 200px 100px auto;
+  grid-gap: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.item{
+  align-self: center;
+  justify-self: stretch;
+}
+
+.reload{
+  color:$color-primary;
+  text-decoration: none;
+
+}
+
+.rss{
+  width:100%;
+  margin:10px auto;
+  padding: 20px 10px;
+  border-bottom: 1px solid $color-bg;
+  &:hover{
+    background: $grad;
+    color: white;
+    border-radius: $radius;
+    @include shadow;
+    .pubDate{
+      color:$color-bg;
+    }
+  }
+}
+
+.rssItem{
+  margin-top:10px;
+}
+.pubDate{
+  padding-top: 10px;
+  color:$grey;
+  font-weight: 300;
+  font-style: italic;
+}

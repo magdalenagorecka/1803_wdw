@@ -1,0 +1,30 @@
+$grad: linear-gradient(to right ,$color-primary, $color-secondary 80%);
+$grad-webkit: -webkit-linear-gradient(to right ,$color-primary, $color-secondary 80%);
+$grad-moz: -moz-linear-gradient(to right ,$color-primary, $color-secondary 80%);
+$grad-o: -o-linear-gradient(to right ,$color-primary, $color-secondary 80%) ;
+
+@mixin grad($grad){
+  @include bg-grad($grad);
+  -webkit-background-clip: text;
+  background-clip:text;
+  -webkit-text-fill-color: transparent;
+}
+@mixin shadow{
+  border-radius: $radius;
+  -webkit-box-shadow: 3px 3px 22px -9px rgba(0,0,0,0.3);
+  -moz-box-shadow: 3px 3px 22px -9px rgba(0,0,0,0.3);
+  box-shadow: 3px 3px 22px -9px rgba(0,0,0,0.3);
+}
+@mixin glow{
+  border-radius: $radius;
+  -webkit-box-shadow: 3px 3px 18px -5px rgba(255,99,71,0.5);
+  -moz-box-shadow: 3px 3px 18px -5px rgba(255,99,71,0.5);
+  box-shadow: 3px 3px 18px -5px rgba(255,99,71,0.5);
+}
+
+@mixin bg-grad($grad) {
+  background: $grad;
+  background: $grad-o;
+  background: $grad-moz;
+  background: $grad-webkit;
+}
