@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700|Shadows+Into+Light+Two");
 h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 32px;
   background: linear-gradient(to right, tomato, coral 80%);
   background: -o-linear-gradient(to right, tomato, coral 80%);
   background: -moz-linear-gradient(to right, tomato, coral 80%);
@@ -8,14 +11,6 @@ h1 {
   -webkit-text-fill-color: transparent;
   text-align: center;
   padding-bottom: 20px;
-  display: none;
-}
-
-@media (min-width: 576px) {
-  h1 {
-    display: inline;
-    text-align: left;
-  }
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -25,8 +20,9 @@ h1 {
   }
 }
 
-h3 {
-  font-weight: 400;
+h2 {
+  font-family: "Shadows Into Light Two", cursive;
+  font-size: 32px;
 }
 
 .styled-select {
@@ -86,9 +82,9 @@ h3 {
   font-size: .8em;
   border: 1px solid whitesmoke;
   border-radius: 5px;
-  -webkit-box-shadow: 3px 3px 22px -9px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 3px 3px 22px -9px rgba(0, 0, 0, 0.3);
-  box-shadow: 3px 3px 22px -9px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 2px 3px 22px -9px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 2px 3px 22px -9px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 3px 22px -9px rgba(0, 0, 0, 0.3);
   outline-color: rgba(255, 99, 71, 0.2);
 }
 
@@ -202,69 +198,55 @@ body {
   font-size: .9em;
 }
 
-.copy {
-  font-size: .8em;
-  color: #898989;
-}
-
-.btn {
-  margin-right: 5px;
-}
-
-.btn button {
-  width: 100%;
-  margin-top: 10px;
-  padding: 15px;
-  border: 1px solid tomato;
-  border-radius: 5px;
-  background: white;
-  font-size: .8em;
-  font-weight: 700;
-  color: tomato;
-  text-decoration: none;
-}
-
-@media (min-width: 576px) {
-  .btn button {
-    padding: 5px 10px;
-  }
-}
-
-.btn button:hover {
-  background: linear-gradient(to right, tomato, coral 80%);
-  background: -o-linear-gradient(to right, tomato, coral 80%);
-  background: -moz-linear-gradient(to right, tomato, coral 80%);
-  background: -webkit-linear-gradient(to right, tomato, coral 80%);
-  color: white;
-}
-
-.btn button .fa {
-  font-size: 1.2em;
-  padding-right: 5px;
-  padding-left: 10px;
-}
-
 /******** BOX ************/
 .box {
   width: 80vw;
   height: max-content;
-  margin: 0 auto;
+  margin: 3% auto 1%;
+  padding: 40px;
   background-color: white;
   border-radius: 5px;
-  -webkit-box-shadow: 3px 3px 22px -9px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 3px 3px 22px -9px rgba(0, 0, 0, 0.3);
-  box-shadow: 3px 3px 22px -9px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 2px 3px 22px -9px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 2px 3px 22px -9px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 3px 22px -9px rgba(0, 0, 0, 0.3);
 }
 
 .content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 200px 100px auto;
+  grid-template-rows: 30% 30% auto;
   grid-gap: 20px;
   border-top: 1px solid #ddd;
 }
 
 .item {
+  padding: 20px;
   align-self: center;
-  justify-self: stretch;
+  text-align: center;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 3px 22px -9px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 2px 3px 22px -9px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 3px 22px -9px rgba(0, 0, 0, 0.3);
+}
+
+img {
+  width: 500px;
+}
+
+.img-thumb {
+  width: 300px;
+  height: 200px;
+}
+
+a {
+  font-family: "Shadows Into Light Two", cursive;
+  font-size: 18px;
+  text-decoration: none;
+  color: tomato;
+}
+
+.copy {
+  margin: 10px auto;
+  font-size: .8em;
+  color: #898989;
 }

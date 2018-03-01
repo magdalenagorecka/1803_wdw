@@ -12,55 +12,55 @@ body{
   font-family: $font;
   font-size: .9em;
 }
-.copy{
-  font-size:.8em;
-  color:darken($grey,10%);
-}
 
-.btn {
-  margin-right: 5px;
-  button{
-    width:100%;
-    margin-top:10px;
-    padding:15px;
-    border:1px solid $color-primary;
-    border-radius: 5px;
-    background: white;
-    font-size: .8em;
-    font-weight: 700;
-    color:$color-primary;
-    text-decoration: none;
-    @media #{$mobile-l}{
-      padding: 5px 10px;
-    }
-    &:hover{
-      @include bg-grad($grad);
-      color: white;
-    }
-    .fa {
-      font-size: 1.2em;
-      padding-right: 5px;
-      padding-left: 10px;
-    }
-  }
-}
 /******** BOX ************/
 .box{
   width:80vw;
   height:max-content;
-  margin:0 auto;
+  margin:3% auto 1%;
+  padding:40px;
   background-color: white;
   @include shadow;
 }
 .content{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 200px 100px auto;
+  grid-template-rows: 30% 30% auto;
   grid-gap: 20px;
   border-top: 1px solid #ddd;
 }
 
 .item{
+  padding:20px;
   align-self: center;
-  justify-self: stretch;
+  text-align: center;
+  @include shadow;
+}
+
+img{
+  width: 500px;
+}
+.img-thumb{
+  width: 300px;
+  height: 200px;
+}
+a{
+  font-family: $font-foot;
+  font-size: 18px;
+  text-decoration: none;
+  color:$color-primary;
+}
+
+.copy{
+  margin: 10px auto;
+  font-size:.8em;
+  color:darken($grey,10%);
+  
+}
+.footnote{
+
+}
+
+.source{
+
 }
