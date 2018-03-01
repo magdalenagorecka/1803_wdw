@@ -15,10 +15,13 @@ body{
 
 /********** HERO *********/
 .hero{
-  margin: 30px auto 60px;;
-  font-size:50px;
+  margin: 30px auto 20px;
+  font-size:20px;
   color: lighten($grey, 20%);
   text-align: center;
+  img{
+   width:200px;
+  }
 }
 
 /******** BOX ************/
