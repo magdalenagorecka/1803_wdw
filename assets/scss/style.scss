@@ -13,11 +13,20 @@ body{
   font-size: .9em;
 }
 
+/********** HERO *********/
+.hero{
+  margin: 30px auto 60px;;
+  font-size:50px;
+  color: lighten($grey, 20%);
+  text-align: center;
+
+}
+
 /******** BOX ************/
 .box{
   width:80vw;
   height:max-content;
-  margin:3% auto 1%;
+  margin:10px auto 1%;
   padding:40px;
   background-color: white;
   @include shadow;
@@ -27,6 +36,10 @@ body{
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 30% 30% auto;
   grid-gap: 20px;
+  h2{
+    align-self: center;
+    border-bottom: 4px solid $color-primary;
+  }
 }
 .content-2{
   display: grid;
@@ -49,6 +62,17 @@ p{
   align-self: center;
   text-align: center;
   @include shadow;
+  transition: .4s;
+  -webkit-perspective: 400px;
+  perspective:600px;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg); 
+  transform: rotate(0deg);
+  &:hover{
+    -ms-transform: rotate(-5deg); 
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
 }
 
 img{
@@ -57,6 +81,8 @@ img{
 .img-thumb{
   width: 300px;
   height: 200px;
+  width:100%;
+
 }
 a{
   font-family: $font-foot;
