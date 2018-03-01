@@ -27,11 +27,25 @@ body{
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 30% 30% auto;
   grid-gap: 20px;
-  border-top: 1px solid #ddd;
+}
+.content-2{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 30% 30% auto;
+  grid-gap: 20px;
 }
 
+p{
+  margin: 10px 0;
+  text-align: justify;
+}
+.text{
+  line-height: 1.5em;
+
+}
 .item{
   padding:20px;
+  margin: 0 auto 20px;
   align-self: center;
   text-align: center;
   @include shadow;
@@ -52,15 +66,21 @@ a{
 }
 
 .copy{
+  text-align: center;
   margin: 10px auto;
   font-size:.8em;
-  color:darken($grey,10%);
+  color:lighten($grey,10%);
   
 }
 .footnote{
-
+  text-align: center;
+  font-size: 10px;
+  color:$grey;
 }
 
 .source{
-
+  text-align: center;
+  font-style: italic;
+  font-size: 12px;
+  color:$grey;
 }
