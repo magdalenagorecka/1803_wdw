@@ -1,4 +1,4 @@
-@import 'partials/var', 'partials/mixins', 'partials/headings',  'partials/select';
+@import 'partials/var', 'partials/mixins', 'partials/headings';
 
 * {
   margin:0;
@@ -19,7 +19,6 @@ body{
   font-size:50px;
   color: lighten($grey, 20%);
   text-align: center;
-
 }
 
 /******** BOX ************/
@@ -40,12 +39,6 @@ body{
     align-self: center;
     border-bottom: 4px solid $color-primary;
   }
-}
-.content-2{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 30% 30% auto;
-  grid-gap: 20px;
 }
 
 p{
