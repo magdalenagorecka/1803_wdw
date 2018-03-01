@@ -46,38 +46,12 @@ body{
 }
 /******** BOX ************/
 .box{
-  width:100vw;
-  height:100vh;
+  width:80vw;
+  height:max-content;
   margin:0 auto;
   background-color: white;
   @include shadow;
-  @media #{$tablet}{
-    width:90vw;
-    height:90vh;
-    margin: 5% auto;
-  }
-  @media #{$lgdesktop}{
-    width:80vw;
-    height:90vh;
-  }
 }
-
-
-
-input{
-  display: none;
-  &:checked + label{
-    color:$color-primary;
-    @include grad($grad);
-    font-weight: 700;
-    border-bottom: 3px solid $color-primary;
-    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-      background: white;
-      color:$color-primary;
-    }
-  }
-}
-
 .content{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -89,36 +63,4 @@ input{
 .item{
   align-self: center;
   justify-self: stretch;
-}
-
-.reload{
-  color:$color-primary;
-  text-decoration: none;
-
-}
-
-.rss{
-  width:100%;
-  margin:10px auto;
-  padding: 20px 10px;
-  border-bottom: 1px solid $color-bg;
-  &:hover{
-    background: $grad;
-    color: white;
-    border-radius: $radius;
-    @include shadow;
-    .pubDate{
-      color:$color-bg;
-    }
-  }
-}
-
-.rssItem{
-  margin-top:10px;
-}
-.pubDate{
-  padding-top: 10px;
-  color:$grey;
-  font-weight: 300;
-  font-style: italic;
 }
